@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo&family=Barlow+Condensed:wght@700&family=Open+Sans:wght@300;800&family=Roboto:wght@300&family=Urbanist:wght@100&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Vue JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+  <!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="index.css">
+
+  <title>Home</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar navbar-fixed-top" id="navbar">
+    <div class="navbar-links">
+      <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+      </button>
+      <a class="navbar logo" style="font-size: 1.8em;"><b>Shirlyn Lim</b><a>
+
+          <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav containerz">
+              <a class="linkz" style="font-size: 1.8em; padding: 0 25px;" href="#">Home</a>
+              <a class="linkz" style="font-size: 1.8em; padding: 0 25px;" href="#">About Me</a>
+              <a class="linkz" style="font-size: 1.8em; padding: 0 25px;" href="#">Forum</a>
+              <div class="dropdown">
+                <a class="dropbtn linkz" style="font-size: 1.8em; padding: 0 25px;">More</a>
+                <div class="dropdown-content" id="more">
+                  <a href="#" style="font-size: 1.4em;">Link 1</a>
+                  <a href="#" style="font-size: 1.4em;">Link 2</a>
+                  <a href="#" style="font-size: 1.4em;">Link 3</a>
+                </div>
+              </div>
+            </ul>
+
+          </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- JUMBOTRON -->
+  <div class="jumbotronz">
+    <div class="container">
+      <h1 class="header">WELCOME</h1>
+      <p class="sub">hello!!! thank you for visiting this website ❤️</p>
+    </div>
+  </div>
+
+  <!-- ABOUT ME -->
+  <div class="containera">
+    <span class="col-md-5 dot profile-pic"></span>
+    <h2 class="col-md-7 header2"><b>ABOUT ME</b></h2>
+    <h6 class="col-md-7 sub2" style="color: #132538;">
+      Hello :D I'm Shirlyn from Singapore! I enjoy discovering and learning about cool stuff :)
+      <br>Hope you like this website ~
+    </h6>
+
+    <!-- LINK TO SOCIAL MEDIA -->
+    <div class="col-md-7 social-menu">
+      <ul>
+        <li><a href="https://www.instagram.com/0825_zzz/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- MODAL FOR SM -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">I dont have lol</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORUM -->
+  <div class="comment-container">
+    <h3 class="header2" style="padding-top: 1.5em;"><b>FORUM</b></h3>
+    <div class="comments">
+    </div>
+    <div class="comment comment-new flex items-start justify-start">
+      <div class="flex-1">
+        <h3 class="comment-author">Name</h3>
+        <form action="#" class="comment-form">
+          <textarea placeholder="Add a comment" class="comment-input" style="resize: none;"></textarea>
+          <input type="submit" class="comment-submit" value="Reply" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
