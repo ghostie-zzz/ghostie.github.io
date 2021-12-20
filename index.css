@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* show position indicator */
+::-webkit-scrollbar-thumb {
+  background: #fed576;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  transition: 1s;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  font-family: Arial;
+  transition: 1s;
+}
+
+.navbar-brand {
+  color: #7dffd6;
+  font-size: 4em;
+  font-family: Germania;
+  cursor: pointer;
+}
+
+.nav {
+  font-family: Lithos Pro;
+  color: #fffaeb;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f1f1f1; */
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fffaeb;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #fed576;
+}
+
+.containerz a:hover {
+  color: #fed576;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: #fed576;
+}
+
+/* JUMBOTRON */
+.jumbotronz {
+  background: url("img/night-forest.jpg");
+  background-size: cover;
+  height: 60em;
+  display: flex;
+  color: #fffaeb;
+}
+
+.header {
+  font-family: "Arimo", sans-serif;
+  font-size: 9em;
+  font-weight: 900;
+  letter-spacing: 0.7em;
+  padding-top: 2.4em;
+  color: #fffaeb;
+}
+
+.sub {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  padding-left: 10em;
+  padding-top: 1.3em;
+  color: #fffaeb;
+}
+
+/* ABOUT ME */
+.dot {
+  height: 30em;
+  width: 30em;
+  background: url("img/doraemon.jpg") center;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 8em 10em 7em 3em;
+}
+
+.header2 {
+  color: #132538;
+  text-align: center;
+  font-size: 6.3em;
+  letter-spacing: 0.3em;
+  font-family: "Arimo", sans-serif;
+  padding-top: 1em;
+}
+
+.sub2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  padding-left: 2em;
+  padding-top: 1.7em;
+  color: #fffaeb;
+}
+
+.containerb {
+  text-align: center;
+}
+
+/* SOCIAL MEDIA */
+.social-menu ul {
+  padding: 5em 5em 0 0;
+  padding-left: 200px;
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 3em;
+}
+
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.5s;
+}
+
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  border: solid #132538;
+}
+
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #3b5999;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #55acee;
+}
+
+/* MODAL FOR SM */
+.modal-title {
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* FORUM */
+.flex {
+  display: flex;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.comment-container {
+  padding: 30em 0 0 10em;
+  width: 300px;
+  height: 200px;
+}
+
+.comment-new {
+  border-top: 1px solid #ebebeb;
+  margin: 1rem 0;
+  padding-top: 2rem;
+}
+
+.comment-author {
+  font-size: 3rem;
+  padding-top: 1em;
+  color: #132538;
+  font-family: "Arimo", sans-serif;
+}
+
+.comment-body {
+  line-height: 1.4;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.comment-input {
+  border-radius: 8px;
+  border: 1px solid #dddd;
+  box-sizing: border-box;
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.comment-input:focus {
+  border-color: #5c6ac4;
+  outline: none;
+}
+
+.comment-submit {
+  background: #5c6ac4;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+  margin-top: 0.5rem;
+  padding: 10px 16px;
+  text-transform: uppercase;
+}
+
+.comment-submit:hover,
+.comment-submit:focus {
+  filter: brightness(110%);
+}
