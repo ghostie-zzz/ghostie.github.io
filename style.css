@@ -215,7 +215,7 @@
 }
 
 /* FORUM */
-/* .flex {
+.flex {
   display: flex;
 }
 
@@ -284,7 +284,7 @@
 .comment-submit:hover,
 .comment-submit:focus {
   filter: brightness(110%);
-} */
+}
 
 /* TIMELINE */
 /* The actual timeline (the vertical ruler) */
@@ -412,4 +412,117 @@
   .right {
     left: 0%;
   }
+}
+
+/* NAME */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* COMMENT */
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.comment-container {
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  margin: 3rem auto;
+  max-width: 600px;
+  min-height: 200px;
+}
+
+.comment-container-title {
+  background: #f8f8f8;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #2d3748;
+  margin-top: 0;
+  padding: 1rem 2rem;
+}
+
+.comment {
+  padding: 1rem 2rem;
+}
+
+.comment-new {
+  border-top: 1px solid #ebebeb;
+  margin: 1rem 0;
+  padding-top: 2rem;
+}
+
+.comment-avatar {
+  border-radius: 50%;
+  height: 48px;
+  margin-right: 1rem;
+  width: 48px;
+}
+
+.comment-author {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.comment-body {
+  color: #4a5568;
+  line-height: 1.4;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.comment-input {
+  box-sizing: border-box;
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.comment-input:focus {
+  border-color: #5c6ac4;
+  outline: none;
+}
+
+.comment-submit {
+  background: #132538;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+  margin-top: 0.5rem;
+  padding: 10px 16px;
+  text-transform: uppercase;
+}
+
+.comment-submit:hover,
+.comment-submit:focus {
+  filter: brightness(110%);
 }
