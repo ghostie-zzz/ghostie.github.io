@@ -80,7 +80,7 @@
   <div class="containera">
     <span class="col-md-5 dot profile-pic"></span>
     <h2 class="col-md-7 header2"><b>ABOUT ME</b></h2>
-    <h6 class="col-md-7 sub2" style="color: #132538;">
+    <h6 class="col-md-7 sub2" style="color: #132538; line-height: 1.6em;">
       Hello :D I'm Shirlyn from Singapore! I enjoy discovering and learning about cool stuff :)
       <br>Hope you like this website ~
     </h6>
@@ -94,26 +94,70 @@
       </ul>
     </div>
 
-  </div>
-
-  <!-- MODAL FOR SM -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">I dont have lol</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          </button>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <!-- MODAL FOR SM -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">I dont have lol</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- FORUM -->
+  <h3 class="col-md-5 header2" style="margin-right: 20em;"><b>FORUM</b></h3>
+  <h6 class="col-md-7 sub2" style="color: #132538; line-height: 1.6em;">
+    How to use the forum:
+    <br>1. Set a username by clicking the button below
+    <br>2. Enter your comment
+    <br>Feel free to give feedback about this website, thank you :D
+  </h6>
+
+  <div class="col-md-7">
+
+    <!-- NAME -->
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Set Username</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p>Username
+          <br>Click anywhere outside the modal to exit
+        </p>
+        <form action="#" class="comment-form">
+          <textarea placeholder="Enter your username..." class="username-input"></textarea>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COMMENT -->
+  <div class="col-md-7">
+    <h3 class="comment-container-title">Comments</h3>
+    <div class="comments usernames">
+    </div>
+    <div class="comment comment-new">
+      <div class="flex-1">
+        <h3 class="comment-author" id="hi">Name</h3>
+        <form action="#" class="comment-form">
+          <textarea placeholder="Add a comment..." class="comment-input"></textarea>
+          <input type="submit" class="comment-submit" value="Reply" />
+        </form>
+      </div>
+    </div>
+  </div>
 
 
   <script src="script.js"></script>
